@@ -34,7 +34,7 @@ console.log(
 let xorSelect = function(array, cb1, cb2) {
   let newArray = [];
   array.forEach((boo) => {
-    if((cb1(boo) === true && cb2(boo) !== true) || (cb1(boo) !== true && cb2(boo) == true)) {
+    if((cb1(boo) === true && cb2(boo) !== true) || (cb1(boo) !== true && cb2(boo) === true)) {
       newArray.push(boo);
     } 
   })
